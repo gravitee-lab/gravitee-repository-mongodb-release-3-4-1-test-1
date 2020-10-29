@@ -31,6 +31,8 @@ public class EnvironmentMongo {
 	@Id
 	private String id;
 
+	private List<String> hrids;
+
 	private String name;
 
 	private String description;
@@ -101,5 +103,13 @@ public class EnvironmentMongo {
 				", organizationId='" + organizationId + '\'' +
 				", domain restrictions='" + domainRestrictions + '\'' +
 				'}';
+	}
+
+	public List<String> getHrids() {
+		return hrids;
+	}
+
+	public void setHrids(List<String> hrids) {
+		this.hrids = hrids;
 	}
 }
